@@ -61,3 +61,12 @@ video {
         filter: hue-rotate(700deg);
     }
 }
+
+@media screen and (max-width: 480px) {
+    body {
+      rotate: 90deg;
+    }
+    .myinfo {
+        top: -150px;
+    }
+  }
