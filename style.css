@@ -7,6 +7,8 @@
 }
 
 body {
+    height: 100vh;
+    width: 100vh;
     overflow: hidden;
     background: rgb(0, 0, 0);
     background-size: cover;
@@ -62,11 +64,28 @@ video {
     }
 }
 
-@media screen and (max-width: 480px) {
-    body {
-      rotate: 90deg;
+@media (max-width: 480px) {
+    body{
+        width: 100%; 
+        height: auto;
+        overflow: hidden;
+
     }
-    .myinfo {
-        top: -150px;
+    .myinfo{
+        transform: rotate(90deg);
+        top: 150px;
+        left: -90px;
     }
-  }
+    video{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(90deg) scale(0.5);
+        
+        
+    }
+    h1{
+        font-size: 60px;
+    }
+    
+}
